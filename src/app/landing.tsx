@@ -1,20 +1,14 @@
-import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "My Next.js App",
   description: "Created with Next.js and Tailwind CSS",
-};
-
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="m-0 bg-[#100716] text-white">{children}</body>
+      <body className="bg-[#100716]">{children}</body>
     </html>
   );
 }
